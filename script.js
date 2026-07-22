@@ -26,7 +26,7 @@ const CONFIG = {
 
   /* ---- Core property info ----------------------------------------------- */
   property: {
-    title: "Premium 2BHK Apartment for Rent",
+    title: "2BHK Apartment for Rent",
     subheadline:
       "A bright, fully furnished 2BHK home — move-in ready with modular kitchen, wardrobes and reserved car parking.",
     city: "Pune, Maharashtra",
@@ -60,6 +60,26 @@ const CONFIG = {
     leaseDuration: "11 Months (renewable)", // EDIT
     negotiable: true, // shows a "Negotiable" badge when true
   },
+
+  /* ---- Facilities (REAL — supplied by owner) ---------------------------- */
+  facilities: [
+    "Solar hot water (as per availability)",
+    "Internet setup available (tenant recharges the plan)",
+    "RO water purifier provided (tenant maintains it)",
+    "Reserved car parking available",
+  ],
+
+  /* ---- Furniture included (REAL — supplied by owner) -------------------- */
+  furniture: [
+    "TV unit",
+    "Sofa",
+    "Complete kitchen setup",
+    "2 Wardrobes",
+    "1 Dressing table",
+    "1 Bed",
+    "Store unit in dry balcony",
+    "Shoe rack",
+  ],
 
   /* ---- Charges / terms to note (REAL — supplied by owner) --------------- */
   terms: [
@@ -229,6 +249,14 @@ function renderAll() {
     ["Availability", p.availability],
   ]
     .map(([k, val]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(val)}</td></tr>`)
+    .join("");
+
+  // ---- Facilities + Furniture ----
+  $("#facilities-list").innerHTML = CONFIG.facilities
+    .map((f) => `<li>${svgIcon("check", "icon-sm")}<span>${esc(f)}</span></li>`)
+    .join("");
+  $("#furniture-list").innerHTML = CONFIG.furniture
+    .map((f) => `<li>${svgIcon("check", "icon-sm")}<span>${esc(f)}</span></li>`)
     .join("");
 
   // ---- Location ----

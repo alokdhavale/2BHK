@@ -208,7 +208,12 @@ a { color: var(--navy-3); }
 .details tr:nth-child(even) { background: rgba(11, 37, 69, 0.02); }
 [data-theme="dark"] .details tr:nth-child(even) { background: rgba(255, 255, 255, 0.02); }
 
-/* ---- Tick list (used in Pricing "Charges to note") ---- */
+/* ---- Facilities & Furniture (two-column list cards) ---- */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.list-card h3 { margin: 0 0 12px; color: var(--navy-3); }
+[data-theme="dark"] .list-card h3 { color: var(--gold-2); }
+
+/* ---- Tick list (Facilities/Furniture lists + Pricing "Charges to note") ---- */
 .tick-list { list-style: none; padding: 0; margin: 0; }
 .tick-list li { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; }
 .tick-list li svg { color: var(--gold); flex: 0 0 auto; margin-top: 3px; }
@@ -319,7 +324,7 @@ a { color: var(--navy-3); }
 
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
-  .location-wrap, .contact-wrap { grid-template-columns: 1fr; }
+  .location-wrap, .contact-wrap, .two-col { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 760px) {
