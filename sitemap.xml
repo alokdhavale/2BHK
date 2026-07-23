@@ -2,7 +2,7 @@
 <!-- Update the <loc> URL to your final domain after deploying. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pune-house-rent-chandannagar-kharadi.pages.dev/</loc>
+    <loc>https://pune-house-rent-chandannagar-kharadi.punehomes.workers.dev/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

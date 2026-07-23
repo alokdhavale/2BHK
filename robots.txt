@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Update the host below to your final domain after deploying.
-Sitemap: https://pune-house-rent-chandannagar-kharadi.pages.dev/sitemap.xml
+Sitemap: https://pune-house-rent-chandannagar-kharadi.punehomes.workers.dev/sitemap.xml

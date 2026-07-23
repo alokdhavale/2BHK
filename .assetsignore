@@ -1,0 +1,8 @@
+# Files that must NOT be served publicly as website assets (Cloudflare Workers static assets)
+.git
+.github
+.wrangler
+node_modules
+.gitignore
+.assetsignore
+*.md
