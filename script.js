@@ -16,7 +16,7 @@ const CONFIG = {
   site: {
     brandName: "2BHK Rentals",
     // EDIT: set this to your final public URL after you deploy (used for SEO/sharing)
-    canonicalUrl: "https://alokdhavale.github.io/2BHK/",
+    canonicalUrl: "https://pune-house-rent-chandannagar-kharadi.pages.dev/",
     // EDIT: paste a Google Maps "Embed a map" iframe SRC for your exact address.
     // (Google Maps -> Share -> Embed a map -> copy the src="..." value)
     // The default below points to Pune city as a safe placeholder.

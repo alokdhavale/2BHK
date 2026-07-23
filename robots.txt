@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Update the host below to your final domain after deploying.
-Sitemap: https://alokdhavale.github.io/2BHK/sitemap.xml
+Sitemap: https://pune-house-rent-chandannagar-kharadi.pages.dev/sitemap.xml
