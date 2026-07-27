@@ -89,19 +89,16 @@ const CONFIG = {
 
   /* ---- Photo gallery ----------------------------------------------------- */
   gallery: [
-    { src: "images/living-room-1.jpg", caption: "Living Room", alt: "Spacious living room with false ceiling" },
-    { src: "images/living-room-2.jpg", caption: "Living Room", alt: "Living room with feature wall" },
-    { src: "images/bedroom-1.jpg", caption: "Bedroom 1", alt: "Bedroom with bed and glass shelf" },
-    { src: "images/bedroom-2-wardrobe.jpg", caption: "Bedroom 1", alt: "Bedroom 1 with built-in wardrobe" },
-    { src: "images/hall-view.jpg", caption: "Bedroom 2", alt: "Bedroom 2 with view towards the kitchen" },
-    { src: "images/dining-utility.jpg", caption: "Bedroom 2", alt: "Bedroom 2 with storage cabinet" },
-    { src: "images/kitchen-1.jpg", caption: "Kitchen", alt: "Modular kitchen with sink and cabinets" },
-    { src: "images/kitchen-2.jpg", caption: "Kitchen", alt: "Kitchen storage and balcony access" },
-    { src: "images/bathroom.jpg", caption: "Bathroom", alt: "Bathroom with shower" },
-    { src: "images/toilet.jpg", caption: "Toilet", alt: "Separate toilet" },
-    { src: "images/balcony.jpg", caption: "Utility Area", alt: "Utility area with dry balcony and storage" },
-    { src: "images/building-lobby.jpg", caption: "Building", alt: "Building entrance and lobby" },
-    { src: "images/parking.jpg", caption: "Parking", alt: "Reserved parking area" },
+    { src: "images/living-room-1.jpg", caption: "Living Room", alt: "Spacious living room with wooden false ceiling and seating" },
+    { src: "images/living-room-2.jpg", caption: "Living Room", alt: "Living room with wooden TV panel wall and diwan" },
+    { src: "images/bedroom-1.jpg", caption: "Bedroom 1", alt: "Bedroom 1 with bed, window and corner glass shelf" },
+    { src: "images/bedroom-1-wardrobe.jpg", caption: "Bedroom 1", alt: "Bedroom 1 with full-height built-in wardrobe" },
+    { src: "images/bedroom-2.jpg", caption: "Bedroom 2", alt: "Bedroom 2 with wardrobe, mirror and ceiling fan" },
+    { src: "images/kitchen-1.jpg", caption: "Kitchen", alt: "Modular kitchen with sink, granite counter and RO purifier" },
+    { src: "images/kitchen-2.jpg", caption: "Kitchen", alt: "Kitchen counter with overhead cabinets and balcony access" },
+    { src: "images/kitchen-3.jpg", caption: "Kitchen", alt: "Kitchen crockery unit and extra storage cabinets" },
+    { src: "images/utility-area.jpg", caption: "Utility Area", alt: "Dry balcony utility area with storage and drying hooks" },
+    { src: "images/entrance.jpg", caption: "Entrance", alt: "Flat entrance door and shared landing with shoe unit" },
   ],
 
   /* ---- Video walkthrough ------------------------------------------------- */
