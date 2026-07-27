@@ -97,8 +97,12 @@ const CONFIG = {
     { src: "images/kitchen-1.jpg", caption: "Kitchen", alt: "Modular kitchen with sink, granite counter and RO purifier" },
     { src: "images/kitchen-2.jpg", caption: "Kitchen", alt: "Kitchen counter with overhead cabinets and balcony access" },
     { src: "images/kitchen-3.jpg", caption: "Kitchen", alt: "Kitchen crockery unit and extra storage cabinets" },
+    { src: "images/bathroom.jpg", caption: "Bathroom", alt: "Tiled bathroom with overhead shower, mixer tap and window" },
+    { src: "images/toilet.jpg", caption: "Toilet", alt: "Separate toilet with cistern, tiled walls and window" },
     { src: "images/utility-area.jpg", caption: "Utility Area", alt: "Dry balcony utility area with storage and drying hooks" },
     { src: "images/entrance.jpg", caption: "Entrance", alt: "Flat entrance door and shared landing with shoe unit" },
+    { src: "images/building-lobby.jpg", caption: "Building", alt: "Building entrance at street level with covered two-wheeler space" },
+    { src: "images/parking.jpg", caption: "Parking", alt: "Reserved car parking in the gated compound" },
   ],
 
   /* ---- Video walkthrough ------------------------------------------------- */

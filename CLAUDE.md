@@ -72,7 +72,13 @@ data, and the CSS.
 (two "Living Room", two "Bedroom 1", three "Kitchen"), so the file name and the caption don't always
 match one-to-one.
 
-Current set (Jul 2026 refresh, sourced from `../2bhk-updated_files/2bhk/`): the owner supplies iPhone
+Current set (Jul 2026 refresh, sourced from `../2bhk-updated_files/2bhk/`) covers the living room,
+bedrooms, kitchen, utility area and entrance. The **bathroom, toilet, building and parking** shots have
+no equivalent in that refresh — they are the older photos, kept on and restored from git history
+(commit `cb011d5`) after the refresh initially dropped them. Don't delete them again when new media
+lands unless the new set actually replaces them.
+
+The owner supplies iPhone
 **`.HEIC`** stills and a **`.MOV`** tour, which must be transcoded before they can go in `images/` —
 browsers won't render HEIC. ffmpeg reads HEIC but the tiled iPhone files come through as a *complex*
 filtergraph, so `-vf scale=…` in the same command fails ("Simple and complex filtering cannot be used
