@@ -73,6 +73,11 @@ python -m http.server 8000
 
 ## 🚀 Deploy (all free, no server code)
 
+> **This site is already deployed** — via Cloudflare Workers, git-connected to `main`, at
+> https://pune-house-rent-chandannagar-kharadi.punehomes.workers.dev. Just `git push` to publish.
+> GitHub Pages was deliberately turned off in Jul 2026; don't re-enable it (a second live copy
+> splits SEO and goes stale). The options below are only for standing this template up elsewhere.
+
 ### GitHub Pages
 1. Create a repo and push these files to the `main` branch.
 2. Repo → **Settings → Pages** → Source: `Deploy from a branch` → `main` / `/root` → Save.

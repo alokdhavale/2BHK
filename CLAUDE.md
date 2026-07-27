@@ -8,24 +8,30 @@ A single-property rental listing website ("2BHK Apartment for Rent", Chandan Nag
 built as a **100% static site — vanilla HTML/CSS/JS, no framework, no build step, no backend, no
 dependencies**. Nothing to `npm install`, compile, or transpile.
 
-## Deployment: dual-hosted, Cloudflare is primary
+## Deployment: Cloudflare Workers, single host
 
-The repo (`alokdhavale/2BHK`, public) deploys to **two** places from the `main` branch:
-- **Cloudflare Worker (primary, the URL that's shared):**
+The repo (`alokdhavale/2BHK`, public) deploys from the `main` branch to **one** place:
+- **Cloudflare Worker (the only live host, the URL that's shared):**
   **https://pune-house-rent-chandannagar-kharadi.punehomes.workers.dev**
   Git-connected via Cloudflare "Workers Builds": Build command *None*, **Deploy command `npx wrangler
   deploy`**, root `/`. Every push to `main` auto-publishes. (`punehomes` is the account's chosen
   workers.dev subdomain — it replaced an auto-generated one to keep the owner's name out of the URL.)
-- **GitHub Pages (still live, legacy):** https://alokdhavale.github.io/2BHK/ — served from `main`/root.
+
+**GitHub Pages was turned off** (Jul 2026, `DELETE /repos/alokdhavale/2BHK/pages`) now that Cloudflare
+is working — https://alokdhavale.github.io/2BHK/ is dead and returns 404. Don't re-enable it in repo
+Settings → Pages; a second live copy of the listing splits SEO and goes stale. Everything below about
+the Cloudflare 25 MiB limit now applies unconditionally — there is no longer a more permissive host to
+fall back on.
 
 The site's canonical URL, Open Graph / Twitter preview image, `sitemap.xml`, and `robots.txt` all
 hard-code the **workers.dev** URL. If the primary URL ever changes, update all of those together.
 
-**Deploy = just push.** `git add -A && git commit -m "…" && git push` — both hosts rebuild in ~1 min.
+**Deploy = just push.** `git add -A && git commit -m "…" && git push` — Cloudflare rebuilds in ~1 min.
 
 ### Cloudflare constraints that will bite you (learned the hard way)
 - **25 MiB per-file asset limit.** `images/walkthrough.mp4` was 25.6 MiB and *failed* the Cloudflare
-  deploy (GitHub Pages allowed it at its 100 MB limit). It was re-encoded with ffmpeg to **11 MiB**
+  deploy (GitHub Pages, back when it was still live, allowed it at its 100 MB limit). It was
+  re-encoded with ffmpeg to **11 MiB**
   (`libx264 -crf 28 -preset slow -c:a aac -b:a 96k -movflags +faststart`). **Keep every file < 25 MiB.**
   If you add/replace media, compress first.
 - **`.assetsignore`** (repo root) lists paths Cloudflare must NOT serve as public website assets
